@@ -7,7 +7,9 @@ import com.luv2code.springboot.thymeleafdemo.entity.Employee;
 public interface EmployeeService {
 
 	List<Employee> findAll();
-	
+	List<Employee> findAllByOrderByLastNameAsc();
+	List<Employee> findAllByOrderByLastNameDesc();
+
 	Employee findById(int theId);
 	
 	void save(Employee theEmployee);
